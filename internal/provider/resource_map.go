@@ -205,7 +205,7 @@ func resolveMap(keys, resultKeys, values []basetypes.StringValue) basetypes.MapV
 
 	finalMapping := make(map[string]attr.Value)
 
-	for resultKey, _ := range resultKeyMapping {
+	for resultKey := range resultKeyMapping {
 		if value, ok := keyValueMapping[resultKey]; ok {
 			finalMapping[resultKey] = basetypes.NewStringValue(value)
 		} else if _, ok := keyValueUnknown[resultKey]; ok {
