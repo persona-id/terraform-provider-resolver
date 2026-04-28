@@ -1,13 +1,13 @@
 # Resolver Terraform Provider
 
-This Terraform provider provides a resource that provides a resolution between keys and values when a subset is unknown to prevent unnessary plan diffs that are no-ops at apply.
+This Terraform provider provides a resource that provides a resolution between keys and values when a subset is unknown to prevent unnecessary plan diffs that are no-ops at apply.
 
 ## Requirements
 
 - [Terraform](https://developer.hashicorp.com/terraform/downloads) >= 1.0
-- [Go](https://golang.org/doc/install) >= 1.20
+- [Go](https://golang.org/doc/install) >= 1.26
 
-## Building The Provider
+## Building the Provider
 
 1. Clone the repository
 1. Enter the repository directory
@@ -31,7 +31,7 @@ go mod tidy
 
 Then commit the changes to `go.mod` and `go.sum`.
 
-## Using the provider
+## Using the Provider
 
 ```terraform
 resource "resolver_map" "main" {
